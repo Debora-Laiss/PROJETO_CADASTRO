@@ -1,13 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
+    <!-- GOOGLE FONTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Importação dos icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Importação do css -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1 class="header-title">Cadastro de Clientes</h1>
+    </header>
+     <!-- Conteudo principal -->
+    <main>
+        
+        <div class="container">
+             <!-- Cabeçalho de seção de cadastro -->
+            <div class="header">
+                <span>Cadastro de Funcionários</span>
+                <button onclick="openModal()" id="new">Incluir</i></button>
+            </div>
+        
+        <!-- Tabela para exibir os dados cadastrados -->    
+        <div class="divTable">
+            <table id="tableClient" class="records">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Celular</th>
+                        <th>Cidade</th>
+                        <!-- Ações de edição e exclusão -->
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+        
+         <!-- Modal para o cadastro de funcionários -->    
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                     <!-- Campos do formulário -->
+                    <label for="m-nome">Nome</label>
+                    <input id="m-nome" type="text" required />
+
+                    <label for="m-funcao">Função</label>
+                    <input id="m-funcao" type="text" required />
+
+                    <label for="m-email">E-mail</label>
+                    <input id="m-email" type="email" required />
+
+                    <label for="m-celular">Celular</label>
+                    <input id="m-celular" type="tel" required />
+
+                    <label for="m-cidade">Cidade</label>
+                    <input id="m-cidade" type="text" required />
+                   
+                    <!-- Botão para salvar os dados do formulário -->
+                    <button id="btnSalvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+
+
+        </div>        
+    </main>
+    <!-- Importação de scripts externos -->
     <script src="script.js"></script>
+      <!-- Rodapé da página -->
+    <footer>
+        Copyright &copy; LAIS.DEBORA
+    </footer>    
 </body>
 </html>
