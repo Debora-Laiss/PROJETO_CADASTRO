@@ -74,6 +74,7 @@ function insertItem(item, index) {
         <td>${item.email}</td>
         <td>${item.celular}</td>
         <td>${item.cidade}</td>
+        <td>${item.funcao}</td>
         <td class="acao">
             <button onclick="openModal(true, ${index})"><i class='bx bx-edit'></i></button>
         </td>

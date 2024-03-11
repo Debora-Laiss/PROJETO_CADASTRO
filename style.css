@@ -1,19 +1,22 @@
+/* Reset global para garantir consistência entre navegadores */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
 }
 
+/* Estilos gerais do body */
 body {
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background-color: white;
+ width: 100vw;
+ height: 100vh;
+ display: block;
+ align-items: flex-start;
+ justify-content: flex-start;
+ background-color: white;
 }
 
+/* Estilos para o cabeçalho da página */
 header h1{
     background-color: rgb(83, 74, 74);
     color: white;
@@ -23,6 +26,7 @@ header h1{
     box-shadow: 0 1px 2px var(--shadow-color);
 }
 
+/* Estilos para o conteúdo principal */
 main{
     flex-grow: 1;
     display: flex;
@@ -35,106 +39,108 @@ main{
     gap: 20px;
 }
 
+/* Estilo para botões */
 button {
-  cursor: pointer; 
+ cursor: pointer; 
 }
 
+/* Estilos para o contêiner principal */
 .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     position: relative;
 }
-   
 
+/* Estilos para o cabeçalho de seção */
 .header {
-  min-height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto 12px;
+ min-height: 70px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin: auto 12px;
 }
 
+/* Estilos para o título do cabeçalho */
 .header span {
-  font-weight: 900;
-  font-size: 20px;
-  word-break: break-all;
-  background-color: white;
-  color: black;
+ font-weight: 900;
+ font-size: 20px;
+ word-break: break-all;
+ background-color: white;
+ color: black;
 }
 
+/* Estilos para o botão de criação de novo registro */
 #new {
-  font-size: 16px;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-  color: black;
-  background-color: rgb(83, 74, 74);
-  margin-left: 940px;
+ font-size: 16px;
+ padding: 8px;
+ border-radius: 5px;
+ border: none;
+ color: white;
+ background-color: rgb(83, 74, 74);
+ margin-left: 1200px; /* Ajuste conforme necessário */
 }
 
+/* Estilos para a div que contém a tabela */
 .divTable {
-  padding: 10px;
-  width: auto; 
-  height:inherit; 
-  overflow:auto;
-  color: white;
+ padding: 10px;
+ width: auto; 
+ height:inherit; 
+ overflow:auto;
+ color: white;
 }
 
+/* Personalização da barra de rolagem */
 .divTable::-webkit-scrollbar {
-  width: 12px;
-  background-color: whitesmoke; 
+ width: 12px;
+ background-color: whitesmoke; 
 }
 
 .divTable::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: darkgray; 
+ border-radius: 10px;
+ background-color: darkgray; 
 }
 
+/* Estilos gerais para a tabela */
 table {
-  width: 100%;
-  border-spacing: 10px;
-  word-break: break-all;
-  border-collapse: collapse;
-  color: black;
-  table-layout: fixed;
+ width: 100%;
+ border-spacing: 10px;
+ word-break: break-all;
+ border-collapse: collapse;
+ color: black;
+ table-layout: fixed;
 }
 
+/* Estilos para o cabeçalho da tabela */
 thead {
-  background-color: white;
-  color: black;
+ background-color: white;
+ color: black;
 }
 
+/* Estilos para as linhas da tabela */
 tr {
-  border-bottom: 1px solid rgb(238, 235, 235)!important;
+ border-bottom: 1px solid rgb(238, 235, 235)!important;
 }
 
+/* Estilos para as células da tabela */
 tbody tr td {
-  vertical-align: text-top;
-  padding: 6px;
-  max-width: 50px;
+ vertical-align: text-top;
+ padding: 6px;
+ max-width: 50px;
 }
 
-thead tr th {
-  padding: 5px;
-  text-align: start;
-  margin-bottom: 50px;
-}
-
-tbody tr {
-  margin-bottom: 50px;
-}
-
+/* Estilos para as células de ação da tabela */
 thead tr th.acao {
-  width: 100px!important;
-  text-align: center;
+ width: 100px!important;
+ text-align: center;
 }
 
 tbody tr td.acao {
-  text-align: center;
+ text-align: center;
 }
 
+/* Estilos para o rodapé da página */
 footer {
     position: fixed;
     left: 0;
@@ -144,123 +150,128 @@ footer {
     color: white; /* Exemplo de cor do texto */
     text-align: center; /* Centraliza o texto */
 }
-   
 
-@media (max-width: 700px) {
-  body {
-    font-size: 10px;
-  }
+/* Media query para responsividade */
+@media (max-width: 760px) {
+ body {
+    font-size: 14px;
+ }
   
-  .header span {
+ .header span {
     font-size: 15px;
-  }
+ }
 
-  #new {
+ #new {
     padding: 5px;
     font-size: 10px;
-  }
+ }
 
-  thead tr th.acao {
+ thead tr th.acao {
     width: auto!important;
-  }
+ }
   
-  td button i {
+ td button i {
     font-size: 20px!important;
-  }
+ }
 
-  td button i:first-child {
+ td button i:first-child {
     margin-right: 0;
-  }
+ }
 
-  .modal {
+ .modal {
     width: 90%!important;
-  }
+ }
 
-  .modal label {
+ .modal label {
     font-size: 12px!important;
-  }
+ }
 }
 
+/* Estilos para o contêiner do modal */
 .modal-container {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: white;
-  display: none;
-  z-index: 999;
-  align-items: center;
-  justify-content: center;
+ width: 100vw;
+ height: 100vh;
+ position: fixed;
+ top: 0;
+ left: 0;
+ background-color: white;
+ display: none;
+ z-index: 999;
+ align-items: center;
+ justify-content: center;
 }
 
+/* Estilos para o modal */
 .modal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  background-color: white;
-  border-radius: 10px;
-  width: 50%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 40px;
+ background-color: white;
+ border-radius: 10px;
+ width: 50%;
 }
 
 .modal label {
-  font-size: 14px;
-  width: 100%;
+ font-size: 14px;
+ width: 100%;
 }
 
 .modal input {
-  width: 100%;
-  outline: none;
-  padding: 5px 10px; 
-  width: 100%;
-  margin-bottom: 20px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+ width: 100%;
+ outline: none;
+ padding: 5px 10px; 
+ width: 100%;
+ margin-bottom: 20px;
+ border-top: none;
+ border-left: none;
+ border-right: none;
 }
 
 .modal button {
-  width: 100%;
-  margin: 10px auto;
-  outline: none;
-  border-radius: 20px; 
-  padding: 5px 10px; 
-  width: 100%;
-  border: none;
-  background-color: rgb(57, 57, 226);
-  color: white;
+ width: 100%;
+ margin: 10px auto;
+ outline: none;
+ border-radius: 20px; 
+ padding: 5px 10px; 
+ width: 100%;
+ border: none;
+ background-color: rgb(57, 57, 226);
+ color: white;
 }
 
+/* Classe para ativar o modal */
 .active {
-  display: flex;
+ display: flex;
 }
 
 .active .modal {
-  animation: modal .4s;
+ animation: modal .4s;
 }
 
+/* Animação para o modal */
 @keyframes modal {
-  from {
+ from {
     opacity: 0;
     transform: translate3d(0, -60px, 0);
-  }
-  to {
+ }
+ to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
-  }
+ }
 }
 
+/* Estilos para botões dentro de células da tabela */
 td button {
-  border: none;
-  outline: none;
-  background: transparent;
+ border: none;
+ outline: none;
+ background: transparent;
 }
 
 td button i {
-  font-size: 25px;
+ font-size: 25px;
 }
 
 td button i:first-child {
-  margin-right: 10px;
+ margin-right: 10px;
 }
