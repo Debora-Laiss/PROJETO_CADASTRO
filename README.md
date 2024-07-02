@@ -1,3 +1,7 @@
+## Projeto cadastro
+
+![Gif](<div style="width:480px"><iframe allow="fullscreen" frameBorder="0" height="270" src="https://giphy.com/embed/L7Lm7JSWSRkW5Vvjjg/video" width="480"></iframe></div>)
+
 # Sistema de Cadastro de Funcionários
 
 ## Descrição
@@ -87,8 +91,8 @@ Este projeto implementa um sistema de cadastro de funcionários utilizando HTML,
 </body>
 </html>
 ```
-# Javascript
-javascript```
+### Javascript
+```javascript
 // Função para obter itens do LocalStorage, retorna um array vazio se não houver dados
 const getItensBD = () => JSON.parse(localStorage.getItem('dbfunc')) ?? [];
 
@@ -219,7 +223,8 @@ function deleteItem(index) {
 // Carrega os itens salvos no LocalStorage na tabela ao iniciar
 loadItens();
 ```
-css```
+### CSS
+```css
 /* Reset global para garantir consistência entre navegadores */
 * {
  margin: 0;
