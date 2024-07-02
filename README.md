@@ -1,6 +1,6 @@
 ## Projeto cadastro
 
-![Gif](<div style="width:480px"><iframe allow="fullscreen" frameBorder="0" height="270" src="https://giphy.com/embed/L7Lm7JSWSRkW5Vvjjg/video" width="480"></iframe></div>)
+![Gif](https://media.giphy.com/media/L7Lm7JSWSRkW5Vvjjg/giphy.gif)
 
 # Sistema de Cadastro de Funcionários
 
